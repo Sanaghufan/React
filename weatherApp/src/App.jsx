@@ -11,8 +11,10 @@ import './App.css'
 //https://img.freepik.com/free-photo/photorealistic-style-clouds-jar_23-2151059011.jpg?size=626&ext=jpg&ga=GA1.1.2038119309.1707818416&semt=sph
 //https://img.freepik.com/free-photo/fantasy-style-clouds-castle_23-2151057662.jpg?size=626&ext=jpg&ga=GA1.1.2038119309.1707818416&semt=sph
 function App() {
-    const apiKey = '59ab2ff3948dff765e237b52de2b4510';
-    const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
+    const VITE_apiKey = import.meta.env.VITE_Key;
+
+    const VITE_apiUrl =  import.meta.env.VITE_Url;
+
     const [location, setLocation] = useState('');
     const [weatherData, setWeatherData] = useState({
         location: '',
@@ -26,7 +28,7 @@ function App() {
     const now = new Date();
     let flag = 0;
     const fetchWeatherByGeolocation = (latitude, longitude) => {
-        const url = `${apiUrl}?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+        const url = `${VITE_apiUrl}?lat=${latitude}&lon=${longitude}&appid=${VITE_apiKey}`;
 
         fetch(url)
             .then(response => response.json())
@@ -76,7 +78,7 @@ function App() {
     };
 
     const fetchWeather = (location) => {
-        const url = `${apiUrl}?q=${location}&appid=${apiKey}`;
+        const url = `${VITE_apiUrl}?q=${location}&appid=${VITE_apiKey}`;
 
         fetch(url)
             .then(response => response.json()
