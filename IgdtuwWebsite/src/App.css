@@ -1,0 +1,79 @@
+#container1{
+  display:flex;
+  flex-direction: row;
+  top:20px;
+  left:20px;
+  justify-content: center;
+  background-color:rgb(8, 8, 58);
+  height:30px;
+  align-items: center;
+}
+#container1 a{
+  text-decoration: none;
+}
+#container1 a div{
+  margin-left: 20px;
+  color: white;
+}
+#container1 a div:hover{
+  color:yellow;
+  cursor: pointer;
+}
+#container2{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;;
+  height:30px;
+  color:rgb(8, 8, 58);
+  margin-bottom: 10px;
+}
+#container2 h1, h4{
+margin-top: 0px;
+}
+#container3 {
+  display: flex;
+  background-color:rgb(8, 8, 58); /* Background color of the navbar */
+  justify-content: center; /* Align items horizontally with equal space between them */
+  align-items: center; /* Center items vertically */
+  height: 30px; /* Set the height of the navbar */
+  margin-top: 40px;
+}
+
+#container3 div {
+  color: white; /* Text color of the navbar links */
+  padding: 10px; /* Add padding around the text */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#container3 div:hover {
+  background-color: white;
+  color:black;
+}
+nav {
+  background-color: #333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+}
