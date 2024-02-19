@@ -7,6 +7,7 @@
   background-color:rgb(8, 8, 58);
   height:30px;
   align-items: center;
+ 
 }
 #container1 a{
   text-decoration: none;
@@ -19,26 +20,110 @@
   color:yellow;
   cursor: pointer;
 }
-#container2{
+#container2 {
+  display:flex;
+  flex-direction: row;
+   justify-content: center; 
+  align-items: center;
+  height:35px;
+  margin-top:20px;
+  /* margin-left: 50px; */
+  position: relative;
+}
+/* #container2 img{
+  height:85px;
+ 
+ margin-right: 20px;
+ left:50px;
+ top:20px;
+
+} */
+#collegeLogo{
+  height:85px;
+  position:fixed;
+ /* margin:50px; */
+ left:280px;
+ top:70px;
+}
+#collegeName{
+  position:fixed;
+  left:400px;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;;
+  margin-top: 60px;
   height:30px;
   color:rgb(8, 8, 58);
   margin-bottom: 10px;
+  margin-right: 20px;
 }
-#container2 h1, h4{
+#collegeName h1, h4{
 margin-top: 0px;
+}
+#collegeName img{
+height:80px;
+align-items: center;
+margin-right: 20px;
+
+}
+#heading1{
+  font-size:30px;
+  font-weight: bold;
+  display:flex;
+}
+#heading2{
+  
+  font-weight: bold;
+}
+#heading3{
+  
+  font-weight: bold;
+}
+#logo{
+  position: fixed;
+  display:flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 5px;
+  right:80px;
+}
+#sticker{
+  display:flex;
+  flex-direction: row;
+  right:8px; 
+}
+#sticker div img{
+  height: 30px;
+ 
+} 
+#link{
+  position:relative;
+  display:flex;
+  flex-direction: row;
+  top:15px;
+}
+#link div{
+  margin-left: 4px;
+
+}
+#link div a{
+  font-size:20px;
+  font-weight: bold;
+  color:black;
 }
 #container3 {
   display: flex;
+  
   background-color:rgb(8, 8, 58); /* Background color of the navbar */
   justify-content: center; /* Align items horizontally with equal space between them */
   align-items: center; /* Center items vertically */
   height: 30px; /* Set the height of the navbar */
-  margin-top: 40px;
+  margin-top: 80px;
+  left:20%;
+  right:0;
+
 }
 
 #container3 div {
@@ -51,6 +136,7 @@ margin-top: 0px;
   background-color: white;
   color:black;
 }
+
 nav {
   background-color: #333;
 }
@@ -76,4 +162,20 @@ li a {
 
 li a:hover {
   background-color: #555;
+}
+@keyframes moveText {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+
+.moving-text {
+  animation: moveText 5s linear infinite; /* Adjust duration and timing function as needed */
+  white-space: nowrap; /* Ensures text doesn't wrap */
+}
+#container4{
+  height:20px;
+}
+#container5{
+  background-color:rgb(8, 8, 58);
+  
 }
